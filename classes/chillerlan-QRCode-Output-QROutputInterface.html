@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/favicon.ico"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
+        <link rel="stylesheet" href="../css/template.css">
+                <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
+        <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+        <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+        <script src="../js/search.js"></script>
+        <script defer src="../js/searchIndex.js"></script>
+    </head>
+<body>
+    <header class="phpdocumentor-top-header"></header>
+    <header class="phpdocumentor-header">
+        <section class="phpdocumentor-section">
+            <h1 class="phpdocumentor-title">Documentation</h1>
+        </section>
+    </header>
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="three phpdocumentor-columns phpdocumentor-sidebar">
+    <section data-search-form class="phpdocumentor-search">
+        <h2 class="phpdocumentor-sidebar__category-header">Search</h2>
+        <label class="phpdocumentor-label">
+            <span class="visually-hidden">Search for</span>
+            <input type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading .." disabled />
+        </label>
+    </section>
+
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                    <h3 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/default.html"><abbr title="\">Global</abbr></a></h3>
+                            <h4 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/chillerlan.html"><abbr title="\chillerlan">chillerlan</abbr></a></h4>
+                <ul class="phpdocumentor-list">
+                                            <li><a href="../namespaces/chillerlan-qrcode.html"><abbr title="\chillerlan\QRCode">QRCode</abbr></a></li>
+                                            <li><a href="../namespaces/chillerlan-qrcodetest.html"><abbr title="\chillerlan\QRCodeTest">QRCodeTest</abbr></a></li>
+                                    </ul>
+                        </section>
+
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+    </section>
+</aside>
+
+            <div class="nine phpdocumentor-columns phpdocumentor-content">
+                <ul class="phpdocumentor-breadcrumbs">
+    <li><a href="../index.html">Home</a></li>
+                        <li><a href="../namespaces/chillerlan.html">chillerlan</a></li>
+                    <li><a href="../namespaces/chillerlan-qrcode.html">QRCode</a></li>
+                    <li><a href="../namespaces/chillerlan-qrcode-output.html">Output</a></li>
+            </ul>
+    <article class="phpdocumentor-element phpdocumentor-interface">
+        <h2 class="phpdocumentor-content__title">
+            QROutputInterface
+                                </h2>
+        <aside class="phpdocumentor-element-found-in">
+            <abbr class="phpdocumentor-element-found-in__file" title="src/Output/QROutputInterface.php"><a href="../files/src-output-qroutputinterface.html"><abbr title="src/Output/QROutputInterface.php">QROutputInterface.php</abbr></a></abbr>
+            :
+            <span class="phpdocumentor-element-found-in__line">20</span>
+        </aside>
+
+        <p class="phpdocumentor-interface__summary">Converts the data matrix into readable output</p>
+        <section class="phpdocumentor-interface__description"></section>
+                
+
+        <h3>Table of Contents</h3>
+        <table class="phpdocumentor-table_of_contents">
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/chillerlan-QRCode-Output-QROutputInterface.html#constant_DEFAULT_MODULE_VALUES">DEFAULT_MODULE_VALUES</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">[
+    // light
+    \chillerlan\QRCode\Data\QRMatrix::M_NULL =&gt; false,
+    // 0
+    \chillerlan\QRCode\Data\QRMatrix::M_DATA =&gt; false,
+    // 4
+    \chillerlan\QRCode\Data\QRMatrix::M_FINDER =&gt; false,
+    // 6
+    \chillerlan\QRCode\Data\QRMatrix::M_SEPARATOR =&gt; false,
+    // 8
+    \chillerlan\QRCode\Data\QRMatrix::M_ALIGNMENT =&gt; false,
+    // 10
+    \chillerlan\QRCode\Data\QRMatrix::M_TIMING =&gt; false,
+    // 12
+    \chillerlan\QRCode\Data\QRMatrix::M_FORMAT =&gt; false,
+    // 14
+    \chillerlan\QRCode\Data\QRMatrix::M_VERSION =&gt; false,
+    // 16
+    \chillerlan\QRCode\Data\QRMatrix::M_QUIETZONE =&gt; false,
+    // 18
+    \chillerlan\QRCode\Data\QRMatrix::M_TEST =&gt; false,
+    // 255
+    // dark
+    \chillerlan\QRCode\Data\QRMatrix::M_DARKMODULE &lt;&lt; 8 =&gt; true,
+    // 512
+    \chillerlan\QRCode\Data\QRMatrix::M_DATA &lt;&lt; 8 =&gt; true,
+    // 1024
+    \chillerlan\QRCode\Data\QRMatrix::M_FINDER &lt;&lt; 8 =&gt; true,
+    // 1536
+    \chillerlan\QRCode\Data\QRMatrix::M_ALIGNMENT &lt;&lt; 8 =&gt; true,
+    // 2560
+    \chillerlan\QRCode\Data\QRMatrix::M_TIMING &lt;&lt; 8 =&gt; true,
+    // 3072
+    \chillerlan\QRCode\Data\QRMatrix::M_FORMAT &lt;&lt; 8 =&gt; true,
+    // 3584
+    \chillerlan\QRCode\Data\QRMatrix::M_VERSION &lt;&lt; 8 =&gt; true,
+    // 4096
+    \chillerlan\QRCode\Data\QRMatrix::M_TEST &lt;&lt; 8 =&gt; true,
+]</td>
+                </tr>
+                                                                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/chillerlan-QRCode-Output-QROutputInterface.html#method_dump">dump()</a></th>
+                    <td class="phpdocumentor-cell">generates the output, optionally dumps it to a file, and returns it</td>
+                    <td class="phpdocumentor-cell">mixed</td>
+                </tr>
+                                            </table>
+
+                    <section>
+                <h3 class="phpdocumentor-constants__header">Constants</h3>
+                                    <a id="constant_DEFAULT_MODULE_VALUES"></a>
+<article
+        class="
+            phpdocumentor-element
+            phpdocumentor-constant
+            phpdocumentor-constant--public
+                    "
+>
+    <h4 class="phpdocumentor-constant__name">DEFAULT_MODULE_VALUES</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="src/Output/QROutputInterface.php"><a href="../files/src-output-qroutputinterface.html"><abbr title="src/Output/QROutputInterface.php">QROutputInterface.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">22</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+        <span class="phpdocumentor-signature__name">$DEFAULT_MODULE_VALUES</span>
+        = <span class="phpdocumentor-signature__default-value">[
+    // light
+    \chillerlan\QRCode\Data\QRMatrix::M_NULL =&gt; false,
+    // 0
+    \chillerlan\QRCode\Data\QRMatrix::M_DATA =&gt; false,
+    // 4
+    \chillerlan\QRCode\Data\QRMatrix::M_FINDER =&gt; false,
+    // 6
+    \chillerlan\QRCode\Data\QRMatrix::M_SEPARATOR =&gt; false,
+    // 8
+    \chillerlan\QRCode\Data\QRMatrix::M_ALIGNMENT =&gt; false,
+    // 10
+    \chillerlan\QRCode\Data\QRMatrix::M_TIMING =&gt; false,
+    // 12
+    \chillerlan\QRCode\Data\QRMatrix::M_FORMAT =&gt; false,
+    // 14
+    \chillerlan\QRCode\Data\QRMatrix::M_VERSION =&gt; false,
+    // 16
+    \chillerlan\QRCode\Data\QRMatrix::M_QUIETZONE =&gt; false,
+    // 18
+    \chillerlan\QRCode\Data\QRMatrix::M_TEST =&gt; false,
+    // 255
+    // dark
+    \chillerlan\QRCode\Data\QRMatrix::M_DARKMODULE &lt;&lt; 8 =&gt; true,
+    // 512
+    \chillerlan\QRCode\Data\QRMatrix::M_DATA &lt;&lt; 8 =&gt; true,
+    // 1024
+    \chillerlan\QRCode\Data\QRMatrix::M_FINDER &lt;&lt; 8 =&gt; true,
+    // 1536
+    \chillerlan\QRCode\Data\QRMatrix::M_ALIGNMENT &lt;&lt; 8 =&gt; true,
+    // 2560
+    \chillerlan\QRCode\Data\QRMatrix::M_TIMING &lt;&lt; 8 =&gt; true,
+    // 3072
+    \chillerlan\QRCode\Data\QRMatrix::M_FORMAT &lt;&lt; 8 =&gt; true,
+    // 3584
+    \chillerlan\QRCode\Data\QRMatrix::M_VERSION &lt;&lt; 8 =&gt; true,
+    // 4096
+    \chillerlan\QRCode\Data\QRMatrix::M_TEST &lt;&lt; 8 =&gt; true,
+]</span>
+    </code>
+            
+</article>
+                                            </section>
+        
+        
+                    <section>
+                <h3 class="phpdocumentor-methods__header">Methods</h3>
+                                    <a id="method_dump"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">dump()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="src/Output/QROutputInterface.php"><a href="../files/src-output-qroutputinterface.html"><abbr title="src/Output/QROutputInterface.php">QROutputInterface.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">50</span>
+    </aside>
+        <p class="phpdocumentor-summary">generates the output, optionally dumps it to a file, and returns it</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">dump</span>(
+                    <span class="phpdocumentor-signature__argument">
+            [                <span class="phpdocumentor-signature__argument__name">$file</span> :
+                <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span> ]            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$file</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                     = <span class="phpdocumentor-signature__argument__default-value">null</span>                </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                    </dl>
+    
+        
+
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+            
+</article>
+                                                            </section>
+            </article>
+                <div data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+
+                    <h2>Search results</h2>
+                    <ul class="phpdocumentor-search-results__entries">
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        cssVars({});
+    </script>
+</body>
+</html>
